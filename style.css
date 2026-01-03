@@ -1,0 +1,254 @@
+/* configurações gerais */
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --accent-color: #00ffff;
+    --text-main: #ffffff;
+    --text-gray: #b3b3b3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: "Google Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* hero section - imagem a esquerda */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 80vh;
+    flex-wrap: wrap-reverse;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.circle-bg {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, var(--accent-color), transparent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid var(--accent-color);
+
+    max-width: 90vw;
+    max-height: 90vw;
+}
+
+.circle-bg img {
+    width: 100%;
+    filter: grayscale(20%);
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 5%;
+}
+
+.greeting { font-size: 1.5rem; margin: 0; }
+.greeting span { color: var(--accent-color); }
+h1 { font-size: 4rem; margin: 0; }
+.role { color: var(--text-gray); font-weight: 300; margin-bottom: 2rem; }
+
+/*tech stack */
+.tech-stack {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 0;
+    margin-top: 50px;
+    color: var(--text-gray);
+    font-weight: bold;
+}
+
+/* about section */
+.about {
+    display: flex;
+    padding: 100px 10%;
+    gap: 5px;
+}
+
+.services { 
+    flex: 1; 
+    display: flexbox;
+}
+
+.service-item {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.about-text { 
+    flex: 2; 
+    margin-left: 100px;
+    display: flexbox;
+}
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.image-web {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.image-mobile {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+html {
+    scroll-behavior: smooth; /* Isto ativa o deslize suave automaticamente */
+}
+
+/* Ajuste opcional para não "colar" o topo da secção no navegador */
+section {
+    scroll-margin-top: 80px; /* Se tiver um menu fixo, isto evita que ele tape o título */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(18, 18, 18, 0.95); /* Cor do fundo com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque moderno */
+}
+
+/* grade de projetos */
+.projects-container h1 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+}
+
+/* O card em si */
+.project-card {
+    background: #1e1e1e;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+/* efeito ao passar mouse no card */
+.project-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+}
+
+.project-img {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #252525;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* zoom na imagem ao passar o mouse */
+.project-card:hover .project-img img {
+    transform: scale(1.1);
+}
+
+/* conteúde de texto no card */
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.4rem;
+    color: var(--accent-color); /* Título em Azul Ciano */
+}
+
+.project-info p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Tags de Tecnologias */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.project-tags span {
+    background: rgba(0, 255, 255, 0.05); /* Fundo ciano quase transparente */
+    color: var(--accent-color);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Botão dentro do Card */
+.project-info .btn-primary {
+    display: inline-block;
+    width: 100%; /* Botão ocupa a largura toda no card */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.box-links a{
+    text-decoration: none;
+    color:#00ffff;
+}
