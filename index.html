@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Rodolfo Santiago | Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Rodolfo Santiago | Portfólio</title>
 </head>
-
 <body>
 
     <header>
@@ -19,7 +16,6 @@
             <ul>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +27,6 @@
                 <h1>Me chamo Rodolfo Santiago</h1>
                 <h2 class="role">Desenvolvedor de Software</h2>
             </div>
-
             <div class="hero-image">
                 <div class="circle-bg">
                     <img src="./rodolfo-perfil.jpg" alt="Foto de Rodolfo Santiago">
@@ -39,34 +34,45 @@
             </div>
         </section>
 
-        <div class="tech-stack">
+        <div class="tech-stack" aria-label="Tecnologias">
             <span>HTML5</span>
             <span>CSS3</span>
             <span>JAVASCRIPT</span>
             <span>REACT</span>
         </div>
 
+        <nav class="social-media" aria-label="Links Sociais">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/rodolfo-santiago-braga-551a43329" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-instagram" href="https://www.instagram.com/santiagobraga_/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <section id="about" class="about">
             <div class="services">
-                <div class="service-item">
-                    <span>Desenvolvimento Web</span>
-                </div>
-                <div class="service-item">
-                    <span>Desenvolvimento Mobile</span>
-                </div>
+                <div class="service-item"><span>Desenvolvimento Web</span></div>
+                <div class="service-item"><span>Desenvolvimento Mobile</span></div>
             </div>
-
             <div class="about-text">
                 <h3>Sobre mim</h3>
-                <p>Iniciei minha jornada no software através da fotografia. Com ela, aprendi a amar o processo de criar algo do zero, combinando técnica e criatividade para entregar experiências únicas.</p>
+                <p>Iniciei minha jornada no software através da fotografia. Com ela, aprendi a amar o processo de criar algo do zero, combinando técnica e criatividade.</p>
             </div>
         </section>
 
         <section id="projects" class="projects-container">
-            <h1 class="section-title">Meus <span>Projetos</span></h1>
-
+            <h2 class="section-title">Meus <span>Projetos</span></h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <article class="project-card">
                     <div class="project-img">
                         <img src="./list to do.png" alt="Screenshot Lista de Tarefas">
                     </div>
@@ -77,14 +83,14 @@
                             <span>JavaScript</span>
                             <span>CSS3</span>
                         </div>
-
                         <div class="box-links">
-                            <a href="https://rodolfosantiago03.github.io/PROJETO-LIST-TO-DO-LIST/" target="_blank">Conhecer projeto</a>
+                            <a href="https://rodolfosantiago03.github.io/PROJETO-LIST-TO-DO-LIST/" target="_blank" rel="noopener">Conhecer projeto</a>
                         </div>
                     </div>
-                </div>
-                </div>
+                </article>
+            </div> 
         </section>
     </main>
+
 </body>
 </html>
