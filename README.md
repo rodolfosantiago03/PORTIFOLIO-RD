@@ -16,7 +16,7 @@ JavaScript
 
 🚀 Deploy
 
-🔗 https://rodolfosantiago03.github.io/PORTFOLIO-RD/
+🔗 https://rodolfosantiago03.github.io/PORTIFOLIO-RD/
 
 📸 Preview
 
