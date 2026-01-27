@@ -62,7 +62,7 @@ Atuar como **Desenvolvedor Front-end Júnior**, contribuindo com projetos reais,
 ---
 
 ## 📬 Contato
-- 💼 LinkedIn: https://www.linkedin.com/in/seu-link  
+- 💼 LinkedIn: https://www.linkedin.com/in/rodolfo-santiago-carneiro-braga-551a43329/ 
 - 🧑‍💻 GitHub: https://github.com/rodolfosantiago03
 
 ---
